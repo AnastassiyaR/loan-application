@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: backend
+  datasource:
+    url: jdbc:postgresql://db:5432/postgres
+    username: backend
+    password: backend
+    driver-class-name: org.postgresql.Driver
+  liquibase:
+    change-log: classpath:/db/changelog/changelog-master.xml
+    enabled: true
+
+server:
+  port: 8080

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
+
+    <changeSet id="2025-01-03-create-app-appConfig" author="loanapp">
+        <createTable tableName="app_config">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="max_customer_age" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="base_interest_rate" type="NUMERIC(6,4)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <insert tableName="app_config">
+            <column name="id" value="1"/>
+            <column name="max_customer_age" value="70"/>
+            <column name="base_interest_rate" value="3.847"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
