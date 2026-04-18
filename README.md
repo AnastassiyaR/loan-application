@@ -1,4 +1,4 @@
-# Loan Approval App
+# Loan Application
 
 A web application for submitting and processing loan applications. The system validates the applicant, generates a payment schedule, and allows a manager to approve or reject the application.
 
