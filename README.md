@@ -1,3 +1,7 @@
+Note: Since two separate services (frontend and backend) were created in Render, it may take some time for the website to work without 5xx error. The backend service is available at https://loan-application-d9vu.onrender.com/swagger-ui/index.html
+
+---
+
 # Loan Application
 
 A web application for submitting and processing loan applications. The system validates the applicant, generates a payment schedule, and allows a manager to approve or reject the application.
